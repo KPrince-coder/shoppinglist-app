@@ -140,7 +140,9 @@ fun ShoppingList() {
                         singleLine = true,
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(8.dp)
+                            .padding(8.dp),
+                        placeholder ={Text("Item to shop")}
+
                     )
                     OutlinedTextField(
                         value = itemQuantity,
@@ -148,7 +150,8 @@ fun ShoppingList() {
                         singleLine = true,
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(8.dp)
+                            .padding(8.dp),
+                        placeholder ={Text("Quantity to shop")}
                     )
                 }
             }
